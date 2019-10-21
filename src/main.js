@@ -52,7 +52,7 @@ const deploy = async ({
 
     return file
   } catch (e) {
-    emitter.emit('deployed', false)
+    emitter.emit('deployed', e)
     return new Error(e)
   }
 }
