@@ -19,9 +19,9 @@ describe('helper: upload', () => {
       .post(endpoint)
       .reply(400, { error: { message: 'failed' } })
 
-    const result = await upload(src, mockAxios)
+    const check = upload(src, mockAxios)
 
-    expect(result).toEqual(new Error('failed'))
+    await expect(check).rejects.toThrow()
   })
 
   it('should throw error if server error occurs', async () => {

@@ -21,7 +21,7 @@ const upload = async (src, axios) => {
   log(res.data)
 
   if (res.status !== 200) {
-    return new Error(res.data.error.message)
+    throw new Error(res.data.error.message)
   }
 
   return true
