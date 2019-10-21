@@ -39,22 +39,15 @@ const deploy = async ({
   instance.defaults.headers.common.key = apiKey
   instance.defaults.headers.common.exchange = apiExchange
 
-  try {
-    let file
+  let file
 
-    emitter.emit('zip', sourcePath)
-    file = await zip(sourcePath, process.env.TMPDIR || '.', 'storeden')
+  emitter.emit('zip', sourcePath)
+  file = await zip(sourcePath, process.env.TMPDIR || '.', 'storeden')
 
-    emitter.emit('upload', file)
-    file = await upload(file, instance)
+  emitter.emit('upload', file)
+  file = await upload(file, instance)
 
-    emitter.emit('deployed', true)
-
-    return file
-  } catch (e) {
-    emitter.emit('deployed', e)
-    return new Error(e)
-  }
+  return file
 }
 
 export default deploy
