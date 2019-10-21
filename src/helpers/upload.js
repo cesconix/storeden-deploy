@@ -27,7 +27,7 @@ const upload = async (src, axios) => {
 
     return true
   } catch (e) {
-    return new Error(e)
+    throw e
   }
 }
 

@@ -29,7 +29,6 @@ const deploy = async ({
   try {
     fs.accessSync(sourcePath.source)
   } catch (e) {
-    console.log(e)
     throw new Error('Source path is not a directory')
   }
 
