@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.4](https://github.com/cesconix/storeden-deploy/compare/v0.1.3...v0.1.4) (2019-10-21)
+
+
+### Bug Fixes
+
+* throw an exception if upload fails with code < 500 ([2543c35](https://github.com/cesconix/storeden-deploy/commit/2543c3580d5bd5a2a9c42237ccdcf7e975e07f5a))
+
 ### [0.1.3](https://github.com/cesconix/storeden-deploy/compare/v0.1.2...v0.1.3) (2019-10-21)
 
 
