@@ -33,11 +33,11 @@ const deploy = async ({
   }
 
   const instance = axios.create({
-    baseURL: `https://connect.storeden.com/v1.1`
+    baseURL: 'https://connect.storeden.com/v1.1'
   })
 
-  instance.defaults.headers.common['key'] = apiKey
-  instance.defaults.headers.common['exchange'] = apiExchange
+  instance.defaults.headers.common.key = apiKey
+  instance.defaults.headers.common.exchange = apiExchange
 
   try {
     let file
