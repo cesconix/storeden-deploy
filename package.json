@@ -1,6 +1,6 @@
 {
   "name": "storeden-deploy",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Utility to deploy store template on a Storeden instance",
   "license": "MIT",
   "repository": "github:cesconix/storeden-deploy",

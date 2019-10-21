@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.3](https://github.com/cesconix/storeden-deploy/compare/v0.1.2...v0.1.3) (2019-10-21)
+
+
+### Bug Fixes
+
+* add form-data as dependency ([7f1ce6f](https://github.com/cesconix/storeden-deploy/commit/7f1ce6f02a5f498ef4ae69fd26c475a4be543c78))
+
 ### [0.1.2](https://github.com/cesconix/storeden-deploy/compare/v0.1.1...v0.1.2) (2019-10-21)
 
 
